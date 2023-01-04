@@ -1,0 +1,273 @@
+.background-image {
+  width: 100%;
+  height: 780px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 15px 50px;
+  z-index: 2;
+}
+
+.header .logo {
+  width: 100%;
+  max-width: 115px;
+  height: 90px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.header .nav-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 40px;
+}
+
+.header .nav-menu li:last-child {
+  padding-right: 0;
+}
+
+.header .nav-menu li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header .nav-menu li input {
+  width: 100%;
+  max-width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 80px;
+  background-color: white;
+  padding: 10px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 30px);
+  font-size: 1rem;
+}
+
+.header .nav-menu li input:focus {
+  outline: none;
+}
+
+.welcome-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.welcome-part .main-text .read-more {
+  margin-top: 40px;
+  background-color: white;
+  color: #222328;
+}
+
+.welcome-part .main-text p {
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.welcome-part .main-img {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+}
+
+.welcome-part .main-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.leaves1 {
+  position: absolute;
+  right: -60px;
+  bottom: -40px;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Reey';
+  src: url("../fonts/Reey-Regular.woff2") format("woff2"), url("../fonts/Reey-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Serif";
+  overflow-x: hidden;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0;
+  color: #343434;
+}
+
+h1 {
+  font-family: "Reey";
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: white;
+}
+
+h2 {
+  font-family: "Reey";
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #222328;
+}
+
+h3 {
+  font-family: "Reey";
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #343434;
+}
+
+.max-width {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #222328;
+  border-radius: 37px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1rem;
+  color: #343434;
+}
+/*# sourceMappingURL=main.css.map */
