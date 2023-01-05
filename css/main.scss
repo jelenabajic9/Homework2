@@ -1,6 +1,7 @@
 @import "header";
 @import "index";
 @import "footer";
+@import "contact";
 
 @font-face {
     font-family: 'Montserrat';
@@ -183,7 +184,7 @@ p{
         height: 100%;
        flex-direction: column; 
        justify-content: start;
-       background-color: rgba(0, 0, 0, 0.5);
+       background-color: rgba(0, 0, 0, 0.7);
        width: 0;
        transform: translateX(-115px);
 

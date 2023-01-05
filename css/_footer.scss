@@ -1,110 +1,108 @@
-
-.footer-cont{
+.footer-cont {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     position: relative;
 
-    .footer-info{
-        h3{
-            font-family: 'Reey';
+    .footer-info {
+        h3 {
+            font-family: "Reey";
             padding-bottom: 15px;
         }
 
-        p{
+        p {
             font-weight: 600;
             font-size: 1.1rem;
         }
-    
-        .contact-links{
+
+        .contact-links {
             list-style: none;
             padding-top: 20px;
 
-            li{
+            li {
                 display: flex;
                 align-items: center;
                 padding-bottom: 5px;
 
-                svg{
+                svg {
                     width: 20px;
                     height: 20px;
 
-                    path{
+                    path {
                         fill: $grey1;
                     }
                 }
 
-                a{
+                a {
                     color: $grey2;
                     font-weight: 500;
                     padding-left: 10px;
                 }
             }
         }
+    }
 
-    .social-m-icons{
-        display: flex;
-        align-items: center;
-        padding-top: 25px;
-
-        a{
+    .social-m-icons {
+        .icons-cont {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding-right: 15px;
+            padding-top: 20px;
 
-            svg{
-                width: 25px;
-                height: 25px;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 15px;
 
-                path{
-                    fill:#94af25;
+                svg {
+                    width: 25px;
+                    height: 25px;
+
+                    path {
+                        fill: #94af25;
+                    }
                 }
             }
         }
     }
-}
-
-    .footer-links{
+    .footer-links {
         position: relative;
-        
-        h3{
+
+        h3 {
             padding-bottom: 20px;
             text-align: center;
         }
 
-        .links-cont{
+        .links-cont {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 
-        ul{
-            list-style: none;
+            ul {
+                list-style: none;
 
-            li{
-                padding-bottom: 10px;
+                li {
+                    padding-bottom: 10px;
 
-                a{
-                    color: $grey1;
-                    font-weight: 500;
-                    font-size: 1.1rem;
+                    a {
+                        color: $grey1;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
     }
 
-       
-    }
-
-    .contact-form{
+    .contact-form {
         width: 100%;
         max-width: 300px;
-        
-        h3{
+
+        h3 {
             padding-bottom: 20px;
         }
 
-        form{
+        form {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -112,109 +110,99 @@
             gap: 20px;
             width: 100%;
 
-            input{
+            input {
                 width: 100%;
                 height: 40px;
                 border: none;
                 border-bottom: 1px solid rgba(39, 41, 44, 0.7);
                 color: $grey1;
 
-                 &:focus{
+                &:focus {
                     outline: none;
                 }
 
-                &::placeholder{
+                &::placeholder {
                     font-size: 1rem;
                     font-weight: 400;
-                    font-family: 'Montserrat';
+                    font-family: "Montserrat";
                     color: $grey1;
                 }
             }
 
-            textarea{
+            textarea {
                 width: 100%;
                 border: none;
                 border-bottom: 1px solid rgba(39, 41, 44, 0.7);
                 height: 40px;
                 color: $grey1;
 
-                &:focus{
+                &:focus {
                     outline: none;
                 }
 
-                 &::placeholder{
+                &::placeholder {
                     font-size: 1rem;
                     font-weight: 400;
-                    font-family: 'Montserrat';
+                    font-family: "Montserrat";
                     color: $grey1;
                 }
             }
 
-            .btn{
+            .btn {
                 border: none;
                 height: 40px;
                 width: 150px;
                 font-size: 1rem;
                 transition: all 0.5s ease-in-out;
 
-                &:hover{
+                &:hover {
                     background-color: $grey1;
                 }
             }
         }
     }
 
-     .f-logo{
-            width: 100%;
-            max-width: 135px;
-            height: 80px;
-            position: absolute;
-            bottom: -40px;
-            left: 50%;
-            transform: translateX(-50%);
+    .f-logo {
+        width: 100%;
+        max-width: 135px;
+        height: 80px;
+        position: absolute;
+        bottom: -50px;
+        right: 0;
 
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                object-position: center;
-            }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
         }
+    }
 }
 
-@media only screen and (max-width: 991px){
-
-    .footer-cont{
+@media only screen and (max-width: 991px) {
+    .footer-cont {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
-
-        .f-logo{
-            bottom: 0;
-            transform: translateX(0);
-        }
     }
-
-    
 }
 
-@media only screen and (max-width: 640px){
-    .footer-cont{
+@media only screen and (max-width: 640px) {
+    .footer-cont {
         grid-template-columns: 1fr;
-        
-        .footer-links{
 
-            h3{
+        .footer-links {
+            h3 {
                 text-align: start;
             }
 
-            .links-cont{
+            .links-cont {
                 grid-template-columns: 1fr;
             }
         }
-    }
 
-    .f-logo{
-        display: none;
+        .f-logo {
+            bottom: 0;
+        }
     }
 }
