@@ -27,6 +27,8 @@
   width: 100%;
   max-width: 115px;
   height: 90px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header .logo img {
@@ -87,6 +89,8 @@
   background-repeat: no-repeat;
   background-position: calc(100% - 30px);
   font-size: 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header .nav-menu li input:focus {
@@ -146,7 +150,169 @@
 .leaves1 {
   position: absolute;
   right: -60px;
-  bottom: -40px;
+  bottom: -150px;
+}
+
+.linear-gradient {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.linear-gradient .logo {
+  height: 70px;
+  max-width: 90px;
+}
+
+.linear-gradient .nav-menu li input {
+  height: 40px;
+}
+
+.headline {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline p {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.dish-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 60px 0;
+}
+
+.dish-gallery .gallery-item {
+  width: 100%;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dish-gallery .gallery-item .gallery-img {
+  width: 100%;
+  height: 270px;
+}
+
+.dish-gallery .gallery-item .gallery-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-box-shadow: 0px 19px 13px rgba(12, 13, 12, 0.3);
+          box-shadow: 0px 19px 13px rgba(12, 13, 12, 0.3);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.dish-gallery .gallery-item .gallery-item-text {
+  width: 100%;
+  padding-top: 25px;
+}
+
+.show-more {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grey-section {
+  background-color: #222328;
+}
+
+.grey-section h2 {
+  color: white;
+  text-align: center;
+}
+
+.grey-section .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 10px;
+}
+
+.grey-section .text p {
+  color: white;
+  padding-right: 30px;
+}
+
+.grey-section .text p:last-child {
+  padding-right: 0;
+}
+
+.grey-section .btn {
+  background-color: white;
+  color: #222328;
+}
+
+.dish-promo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dish-promo-cont .dish-img {
+  width: 100%;
+  max-width: 450px;
+  height: 450px;
+  margin-right: 20px;
+}
+
+.dish-promo-cont .dish-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 19px 13px rgba(12, 13, 12, 0.3);
+          box-shadow: 0px 19px 13px rgba(12, 13, 12, 0.3);
+}
+
+.dish-promo-cont .promo-text {
+  width: 100%;
+  max-width: 500px;
+}
+
+.dish-promo-cont .promo-text h2 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.dish-promo-cont .promo-text p {
+  padding: 20px 0;
+}
+
+.reversed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 @font-face {
@@ -224,20 +390,19 @@ h1 {
 
 h2 {
   font-family: "Reey";
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   font-weight: 400;
   color: #222328;
 }
 
 h3 {
-  font-family: "Reey";
   font-size: 1.75rem;
   font-weight: bold;
   color: #343434;
 }
 
 .max-width {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -259,15 +424,20 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  background-color: #222328;
+  background-color: #343434;
   border-radius: 37px;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 1rem;
   color: #343434;
+}
+
+.section-padding {
+  padding: 40px 0;
 }
 /*# sourceMappingURL=main.css.map */

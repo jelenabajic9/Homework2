@@ -23,6 +23,7 @@ $grey1: #222328;
         width: 100%;
         max-width: 115px;
         height: 90px;
+        transition: all 0.5s ease-in-out;
 
         img{
             width: 100%;
@@ -67,6 +68,7 @@ $grey1: #222328;
                 background-repeat: no-repeat;
                 background-position: calc(100% - 30px);
                 font-size: 1rem;
+                transition: all 0.5s ease-in-out;
 
                 &:focus{
                     outline: none;
@@ -119,5 +121,22 @@ $grey1: #222328;
 .leaves1{
     position: absolute;
     right: -60px;
-    bottom: -40px;
+    bottom: -150px;
+}
+
+.linear-gradient{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+
+    .logo{
+        height:70px ;
+        max-width: 90px;
+    }
+
+    .nav-menu{
+
+        li input{
+            height: 40px;
+        }
+    }
 }
