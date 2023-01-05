@@ -11,16 +11,25 @@
 
 <body>
     <header>
+        <a href="./index.html" class="mobile-logo">
+            <img src="./images/logo.png" alt="Italian Restaurant Logo">
+        </a>
         <div class="header">
             <a href="./index.html" class="logo">
                 <img src="./images/logo.png" alt="Italian Restaurant Logo">
             </a>
+
             <ul class="nav-menu">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./abot-us.html">ABOUT US</a></li>
                 <li><a href="./contact.html">CONTACT</a></li>
                 <li><input type="text"></li>
             </ul>
+        </div>
+        <div class="hamburger hamburger--3dx" type="button" onclick="toggleBurger(this)">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
         </div>
     </header>
     <div class="background-image" style="background-image:url('./images/background.jpg')">
@@ -40,7 +49,7 @@
         </div>
     </div>
 
-    <section class="max-width section-padding" id="#pasta">
+    <section class="max-width section-padding" id="pasta">
         <div class="headline">
             <h2>Restaurant Pasta Menu</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
@@ -86,20 +95,22 @@
     </section>
 
     <section class="section-padding grey-section">
-        <h2>Lorem Ipsum Dolor</h2>
-        <div class="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip.
-            </p>
+        <div class="max-width">
+            <h2>Lorem Ipsum Dolor</h2>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip.
+                </p>
+            </div>
+            <a href="#" class="btn show-more">more info</a>
         </div>
-        <a href="#" class="btn show-more">more info</a>
     </section>
 
     <section class="max-width section-padding" id="discounts">
@@ -132,7 +143,7 @@
     </section>
 
     <section class="pizza-menu-cont" style="background-image: url('./images/background.jpg');">
-        <div class="max-width section-padding" id="#pizza-menu">
+        <div class="max-width section-padding" id="pizza-menu">
             <div class="headline">
                 <h2>Restaurant Pizza Menu</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -196,7 +207,7 @@
         </div>
     </section>
 
-    <footer class="grey-section-padding">
+    <footer class="section-padding">
         <div class="max-width">
             <div class="footer-cont">
                 <div class="footer-info">
@@ -250,11 +261,11 @@
                     <h3>Links</h3>
                     <div class="links-cont">
                         <ul>
-                            <li><a href="./about-us.html">About us</a></li>
+                            <li><a href="./about-us.html ">About us</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#pasta">Pasta menu</a></li>
+                            <li><a href="#pasta" data-ajax="false">Pasta menu</a></li>
                             <li><a href="#discounts">Discounts</a></li>
                             <li><a href="#pizza-menu">Pizza menu</a></li>
                         </ul>
