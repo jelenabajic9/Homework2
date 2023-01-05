@@ -994,6 +994,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
   padding-top: 80px;
 }
 
@@ -1001,11 +1002,21 @@ header {
   width: 100%;
   max-width: 500px;
   height: 400px;
+  overflow: hidden;
 }
 
 .contact-section .contact-cont .map iframe {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-section .contact-cont .map:hover iframe {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact-section .contact-cont .contact-form {
@@ -1082,11 +1093,51 @@ header {
   resize: none;
 }
 
+.contact-section .contact-cont .contact-form form .center {
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+
 .contact-section .contact-cont .contact-form form .btn {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   border-radius: 5px;
+}
+
+.contact-section .contact-cont .contact-form form svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+}
+
+.contact-section .contact-cont .contact-form form .btn:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+
+.contact-section .contact-cont .contact-form form .btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.contact-section .contact-cont .contact-form form .btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .background-overlay {
@@ -1099,8 +1150,26 @@ header {
   z-index: -1;
 }
 
+@media only screen and (max-width: 640px) {
+  .contact-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .contact-cont .map {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-cont .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -1108,7 +1177,7 @@ header {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -1116,7 +1185,7 @@ header {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -1124,7 +1193,7 @@ header {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -1132,7 +1201,7 @@ header {
 }
 
 @font-face {
-  font-family: 'Reey';
+  font-family: "Reey";
   src: url("../fonts/Reey-Regular.woff2") format("woff2"), url("../fonts/Reey-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
