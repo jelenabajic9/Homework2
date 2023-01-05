@@ -315,6 +315,223 @@
           flex-direction: row-reverse;
 }
 
+.pizza-menu-cont {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+
+.pizza-menu-cont .headline {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+
+.pizza-menu-cont .headline::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 7px;
+  background-color: white;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pizza-menu-cont .headline h2 {
+  color: white;
+}
+
+.pizza-menu-cont .headline p {
+  color: white;
+}
+
+.pizza-menu-cont .pizza-img {
+  width: 100%;
+  max-width: 575px;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translateY(65px);
+          transform: translateY(65px);
+}
+
+.pizza-menu-cont .pizza-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.pizza-menu-cont .leaves2 {
+  position: absolute;
+  top: -225px;
+  width: 100%;
+  height: 800px;
+}
+
+.pizza-menu-cont .leaves2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.text-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  padding: 40px 0 40px 0;
+}
+
+.text-cont .text h3 {
+  font-family: 'Reey';
+  text-align: center;
+  color: #393939;
+}
+
+.text-cont .text p {
+  padding-top: 15px;
+}
+
+.quote-cont {
+  padding-top: 70px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.quote-cont p {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.quote-cont h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.grey-section-padding {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.grey-section-padding .leaves3 {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  max-width: 244px;
+  height: 225px;
+}
+
+.grey-section-padding .leaves3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.grey-section-padding .leaves4 {
+  position: absolute;
+  top: -75px;
+  right: 0;
+  width: 100%;
+  max-width: 340px;
+  height: 350px;
+}
+
+.grey-section-padding .leaves4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.newsletter-cont {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.newsletter-cont h2 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.newsletter-cont p {
+  color: white;
+  padding-top: 30px;
+}
+
+.newsletter-cont form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.newsletter-cont form input {
+  width: 100%;
+  max-width: 450px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  color: #343434;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.newsletter-cont form input:focus {
+  outline: none;
+}
+
+.newsletter-cont form .btn {
+  height: 40px;
+  margin-left: -100px;
+  border: none;
+  background-color: #343434;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
@@ -438,6 +655,6 @@ p {
 }
 
 .section-padding {
-  padding: 40px 0;
+  padding: 70px 0;
 }
 /*# sourceMappingURL=main.css.map */
