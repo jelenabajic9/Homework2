@@ -16,3 +16,4 @@ $(function () {
         nav.toggleClass('linear-gradient', $(this).scrollTop() > nav.height());
     });
 });
+
