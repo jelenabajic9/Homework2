@@ -2,6 +2,7 @@
 @import "index";
 @import "footer";
 @import "contact";
+@import "about-us";
 
 @font-face {
     font-family: "Montserrat";
@@ -180,7 +181,7 @@ p {
         justify-content: start;
         background-color: rgba(0, 0, 0, 0.7);
         width: 0;
-        transform: translateX(-115px);
+        transform: translateX(-165px);
 
         .nav-menu {
             flex-direction: column;
@@ -373,6 +374,10 @@ p {
             font-size: 1rem;
             margin-right: auto;
             margin-left: auto;
+        }
+
+        .main-text p {
+            display: none;
         }
     }
 

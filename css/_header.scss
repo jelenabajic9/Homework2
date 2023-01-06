@@ -1,7 +1,7 @@
 $grey1: #222328;
- $grey2: #343434;
+$grey2: #343434;
 
-.background-image{
+.background-image {
     width: 100%;
     height: 780px;
     background-position: center;
@@ -10,21 +10,18 @@ $grey1: #222328;
     position: relative;
 }
 
-header{
+header {
     position: fixed;
     z-index: 99;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-   
-
 }
 
- .mobile-logo{
-        display: none;
-    }
-.header{
+.mobile-logo {
+    display: none;
+}
+.header {
     position: fixed;
     display: flex;
     align-items: center;
@@ -34,13 +31,13 @@ header{
     z-index: 2;
     transition: all 0.5s ease-in-out;
 
-    .logo{
+    .logo {
         width: 100%;
         max-width: 115px;
         height: 90px;
         transition: all 0.5s ease-in-out;
 
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -48,53 +45,60 @@ header{
         }
     }
 
-    
-
-    .nav-menu{
+    .nav-menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
         list-style: none;
 
-        li{
+        li {
             display: flex;
             align-items: center;
             justify-content: center;
             padding-right: 40px;
 
-            &:last-child{
+            &:last-child {
                 padding-right: 0;
             }
 
-            a{
+            a {
                 color: white;
                 text-transform: uppercase;
                 font-size: 1.25rem;
                 font-weight: bold;
             }
 
-            input{
-                width: 100%;
-                max-width: 180px;
-                height: 50px;
-                border: none;
-                border-radius: 80px;
-                background-color: white;
-                padding: 10px;
-                background-image: url('../images/search.svg');
-                background-repeat: no-repeat;
-                background-position: calc(100% - 30px);
-                font-size: 1rem;
-                transition: all 0.5s ease-in-out;
+            form {
+                position: relative;
+                input {
+                    width: 180px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 80px;
+                    background-color: white;
+                    padding: 10px;
+                    font-size: 1rem;
+                    transition: all 0.5s ease-in-out;
+                    position: relative;
 
-                &:focus{
-                    outline: none;
+                    &:focus {
+                        outline: none;
+                        width: 300px;
+                    }
+                }
+
+                input.search {
+                    background-image: url("../images/search.svg");
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    background-position-x: calc(100% - 10px);
                 }
             }
         }
     }
 }
-.welcome-part{
+
+.welcome-part {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,14 +109,14 @@ header{
     width: 100%;
     height: fit-content;
 
-    .main-text{
-        .read-more{
+    .main-text {
+        .read-more {
             margin-top: 40px;
             background-color: white;
             color: $grey1;
         }
 
-        p{
+        p {
             width: 100%;
             max-width: 400px;
             color: white;
@@ -121,12 +125,12 @@ header{
         }
     }
 
-    .main-img{
+    .main-img {
         width: 100%;
         max-width: 500px;
         height: 500px;
 
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -135,7 +139,7 @@ header{
     }
 }
 
-.leaves1{
+.leaves1 {
     position: absolute;
     right: -60px;
     bottom: -150px;
@@ -143,7 +147,7 @@ header{
     max-width: 600px;
     height: 480px;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -151,22 +155,18 @@ header{
     }
 }
 
-.linear-gradient{
+.linear-gradient {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
 
-    .logo{
-        height:70px ;
+    .logo {
+        height: 70px;
         max-width: 90px;
     }
 
-    .nav-menu{
-
-        li input{
+    .nav-menu {
+        li input {
             height: 40px;
         }
-
-       
     }
 }
-

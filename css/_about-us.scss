@@ -1,0 +1,108 @@
+.background-image2 {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+}
+
+.about-us-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .about-leaves {
+        position: absolute;
+        top: -270px;
+        left: -75px;
+        width: 100%;
+        max-width: 340px;
+        height: 342px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .about-us-text {
+        width: 100%;
+        max-width: 700px;
+        padding: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+
+        .headline {
+            h4 {
+                padding-bottom: 20px;
+            }
+        }
+
+        .text {
+            padding-top: 30px;
+
+            p {
+                padding-bottom: 15px;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .about-us-img {
+        width: 100%;
+        max-width: 700px;
+        height: 800px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about-us-cont {
+        flex-direction: column;
+
+        .about-us-text {
+            .about-leaves {
+                max-width: 255px;
+                height: 255px;
+                top: -132px;
+            }
+        }
+
+        .about-us-img {
+            height: 500px;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .about-us-cont .about-us-text .about-leaves {
+        display: none;
+    }
+
+    .about-us-cont .about-us-img {
+        height: 400px;
+    }
+}
